@@ -134,8 +134,8 @@ def run(**kwargs):
 
 
         if cfg.n_checkpoint != -1 and (epoch+1) % cfg.n_checkpoint == 0:
-            torch.save(generator.state_dict(), '%s/%s/generator_%d.pth' % (cfg.saved_path,cfg.dataset_name, epoch))
-            torch.save(discriminator.state_dict(), '%s/%s/discriminator_%d.pth' % (cfg.saved_path,cfg.dataset_name, epoch))
+            torch.save(generator.state_dict(), '%s/generator_%d.pth' % (cfg.saved_path, epoch))
+            torch.save(discriminator.state_dict(), '%s/discriminator_%d.pth' % (cfg.saved_path, epoch))
 
 if __name__ == '__main__':
     import fire
