@@ -95,10 +95,12 @@ Sort by time.
 I have trained 200 epochs on a single TiTanX for about 15 hours.We can see generated images tend to be clearer through time.However,it 
 seems we need to train more epochs.
 
-# Test
+# Pretrained Model
 
-To test with trained checkpoints,run:
+To test with pretrained checkpoints,run:
 ```
 python test.py test --test_epoch=299
 ```
-Checkpoints file ``` generator_299.pth```is trained with 300 epochs,about 207 MB.
+Checkpoints file ``` generator_299.pth```is trained with 300 epochs,about 207 MB.[BaiDuDisk](https://pan.baidu.com/s/1hAuAVsq6USTeMBzq1Naz9g) Download and put into checkpoints subdirectory.
+
+You can choose directly test with it,or train further based on it,just set ```strat_epoch ``` to 299.
