@@ -97,8 +97,8 @@ seems we need to train more epochs.
 
 # Test
 
-Open test.py to modify latest checkpoint's name and confirm your test image path.Run:
+To test with trained checkpoints,run:
 ```
-python test.py test(image_path)
+python test.py test --test_epoch=299
 ```
-I may upload my checkpoints file soon.
+Checkpoints file ``` generator_299.pth```is trained with 300 epochs,about 207 MB.
